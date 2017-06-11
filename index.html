@@ -6,14 +6,16 @@
   </ul>
 
 <script>
-function add() {
-  console.log("logged baby");
-}
+  function add() {
+    // grab
+    var t = document.getElementsByClassName("TheList");
+    console.log(t);
 
-
+    // add
+    var newDiv = document.createElement ('div');
+    document.body.appendChild(newDiv);
+  }
 </script>
 
 
 </html>
-
-
