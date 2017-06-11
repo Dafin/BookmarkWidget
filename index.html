@@ -8,12 +8,14 @@
 <script>
   function add() {
     // grab
-    var t = document.getElementsByClassName("TheList");
-    console.log(t);
+    var ulArray = document.getElementsByClassName("TheList");
+    console.log(ulArray);
 
+    var firstUl = ulArray[0];
+    console.log(firstUl)
     // add
-    var newDiv = document.createElement ('div');
-    document.body.appendChild(newDiv);
+    var newItem = document.createElement ('li');
+    firstUl.appendChild(newItem);
   }
 </script>
 
