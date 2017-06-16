@@ -10,6 +10,6 @@
     // add
     var newItem = document.createElement ('li');
 
-    newItem.innerHTML = randomString;
+    //newItem.innerHTML = randomString;
     firstUl.appendChild(newItem);
   }
