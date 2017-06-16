@@ -1,5 +1,7 @@
 <html>
+<head>
   <title>Dafins super cool Bookmark Widget thingamijig</title>
+
   <meta name="subject" content="Building a cool thingamijig whilst learning javascript">
   <meta name="description" content="Dafins Bokmark Widget thingy">
   <meta name="twitter:creator" content="@Dafin">
@@ -7,30 +9,22 @@
   <meta name="og:site_name" content="Bookmark Widget"/>
   <meta name="og:description" content="A Rudimentary Bookmark Manager"/>
 
+  <link href="./styles/style.css" rel="stylesheet" type="text/css">
+</head>
 
+<body>
+  <div class="container">
+    <div class="row col">  
+    <h1> BookmarkWidget</h1>
+    </div>
+    <div class="row">
+      <input placeholder="Bookmark" ></input>
+      <button onclick="add()">Add +</button>
+    </div>
+    <ul class="TheList">
+    </ul>
+  </div>
 
-
-
-
-  <input placeholder="Bookmark" ></input>
-  <button onclick="add()">Add +</button>
-
-  <ul class="TheList">
-  </ul>
-
-<script>
-  function add() {
-    // grab
-    var ulArray = document.getElementsByClassName("TheList");
-    console.log(ulArray);
-
-    var firstUl = ulArray[0];
-    console.log(firstUl)
-    // add
-    var newItem = document.createElement ('li');
-    firstUl.appendChild(newItem);
-  }
-</script>
-
-
+  <script src="./js/script.js"></script>
+</body>
 </html>
