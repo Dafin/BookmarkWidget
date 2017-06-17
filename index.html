@@ -15,14 +15,21 @@
 <body>
   <div class="container">
     <div class="row col">  
-    <h1> BookmarkWidget</h1>
+      <h1> BookmarkWidget</h1>
     </div>
-    <div class="row">
+    <div class="col inputbox">
       <input placeholder="Bookmark" ></input>
-      <button onclick="add()">Add +</button>
+      <button onclick="add()"> + Add</button>
     </div>
-    <ul class="TheList">
-    </ul>
+    <div class="col listing">
+      <ul class="TheList">
+      </ul>
+    </div>
+
+    <div class="col info">
+      <h3>What is this? </h3>
+      <p>A simple gadget to create(and soon edit) lists and list items.</p><p>I know, I know, it's really exciting, ;) <br>Please try and contain your emotions.</p>
+    </div>
   </div>
 
   <script src="./js/script.js"></script>
