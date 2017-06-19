@@ -9,6 +9,12 @@
 
     // add
     var newItem = document.createElement ('li');
+    
+    var thisGrabbed = document.getElementById("inputHere"); 
+
+    var grabbed = thisGrabbed.value;
+    console.log("was" + grabbed)
+
 
     //newItem.innerHTML = randomString;
     firstUl.appendChild(newItem);
