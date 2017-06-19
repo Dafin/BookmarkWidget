@@ -8,12 +8,15 @@
 
 
     // add
-    var newItem = document.createElement ('li');
     
     var thisGrabbed = document.getElementById("inputHere"); 
+    var newItem = document.createElement ('li');
 
     var grabbed = thisGrabbed.value;
-    console.log("was" + grabbed)
+    var tNode = document.createTextNode(grabbed);  
+
+
+    console.log("it was: " + grabbed)
 
 
     //newItem.innerHTML = randomString;
