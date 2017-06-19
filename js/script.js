@@ -19,7 +19,10 @@
     console.log("it was: " + grabbed)
 
 
-    //newItem.innerHTML = randomString;
-    firstUl.appendChild(newItem);
-    newItem.appendChild(tNode)
+    if (grabbed  == "") {
+        alert("U wot m8")
+    } else {
+        firstUl.appendChild(newItem);
+        newItem.appendChild(tNode);
+    }
   }
