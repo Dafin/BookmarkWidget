@@ -7,8 +7,10 @@ h1, .info{
     color: gray;
 }
 
+
 .listing {
         border-right: 1px dotted #aaa;
+        color: silver;
 }
 
 ul li {
@@ -58,6 +60,12 @@ ul li {
 p {
   font-style: italic;
   color:  silver;
+}
+
+
+.listing {
+        border-bottom: 1px dotted #aaa;
+
 }
 
 /*breakpoints */
