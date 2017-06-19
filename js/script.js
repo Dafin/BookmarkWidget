@@ -21,4 +21,5 @@
 
     //newItem.innerHTML = randomString;
     firstUl.appendChild(newItem);
+    newItem.appendChild(tNode)
   }
