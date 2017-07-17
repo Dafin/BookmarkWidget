@@ -18,7 +18,7 @@ Jquery version `>= 3.2`, a version is included, however it is recommended that y
 
 1. Enter the URI (the address of the website you wish to save) into the textbox. You may do this two 	ways;
 	* Type in the address of the website you wish to save  ***Or...***
-	* Select, Drag and drop the address of the website into the the text box.
+	* Select, then drag and drop the address of the website from a browser tab or bookmark into the the text box.
 
 2. Press the '**+ Add**'  button. You should receive on screen confirmation. 
 3. ??????????
