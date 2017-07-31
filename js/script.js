@@ -4,8 +4,9 @@
     console.log(ulArray);
 
     var firstUl = ulArray[0];
-    console.log(firstUl)
+    var lastUl = ulArray[ulArray.length - 1];
 
+    console.log(firstUl)
 
     // add
     
@@ -17,15 +18,16 @@
 
 
     console.log("it was: " + grabbed)
+    console.log(lastUl)
 
     // check for blank entry
     if (grabbed  == "") {
-        alert("U wot m8");
-        
-    // *Not functional - dupe check     
-    //} else if (grabbed === tNode.value){
-    //    alert("dupe");
-    //    inputHere.value = '';
+        alert("Did you forget to drag or type something in?");
+
+   // *Not functional - dupe check     
+    } else if (grabbed == lastUl){
+       alert("dupe");
+       inputHere.value = '';
 
     } else {
         firstUl.appendChild(newItem);
