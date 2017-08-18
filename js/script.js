@@ -1,3 +1,5 @@
+
+
   function add() {
     // grab
     var ulArray = document.getElementsByClassName("TheList");
@@ -23,11 +25,6 @@
     // check for blank entry
     if (grabbed  == "") {
         alert("Did you forget to drag or type something in?");
-
-   // *Not functional - dupe check     
-    } else if (grabbed == lastUl){
-       alert("dupe");
-       inputHere.value = '';
 
     } else {
         firstUl.appendChild(newItem);
