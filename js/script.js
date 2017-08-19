@@ -1,6 +1,4 @@
-
-
-  function add() {
+ function add() {
     // grab
     var ulArray = document.getElementsByClassName("TheList");
     console.log(ulArray);
@@ -23,12 +21,19 @@
     console.log(lastUl)
 
     // check for blank entry
-    if (grabbed  == "") {
-        alert("Did you forget to drag or type something in?");
 
-    } else {
-        firstUl.appendChild(newItem);
-        newItem.appendChild(tNode);
-        inputHere.value = '';
+    try { 
+        if (grabbed == "") throw "empty!!";
     }
-  }
+    catch(err) {
+       alert("Input is " + err + "\r\nDid you forget to drag or type something in?");
+       return;
+   }
+
+   // Do the actual adding and clearing input for next item entry.
+
+   firstUl.appendChild(newItem);
+   newItem.appendChild(tNode);
+   inputHere.value = '';
+
+}
