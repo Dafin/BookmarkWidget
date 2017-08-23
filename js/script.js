@@ -24,9 +24,14 @@
 
     try { 
         if (grabbed == "") throw "empty!!";
+
+    // trying to  to check for presence of a dot,regex might be overkill?    
+        //if (!grabbed.indexOf('.') > -1) throw "Not a website";
+        if (!grabbed.includes(".")) throw "not a website    ";        
     }
+
     catch(err) {
-       alert("Input is " + err + "\r\nDid you forget to drag or type something in?");
+       alert("Input is " + err + "\r\nDid you forget to drag or type something in correctly?");
        return;
    }
 
