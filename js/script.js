@@ -20,25 +20,34 @@
     console.log("it was: " + grabbed)
     console.log(lastUl)
 
-    // check for blank entry
+    var errors = checkEntry(grabbed)
+    
+    //basic error checking
 
-    try { 
-        if (grabbed == "") throw "empty!!";
+    function checkEntry(grabbed) {
 
-    // trying to  to check for presence of a dot,regex might be overkill?    
-        //if (!grabbed.indexOf('.') > -1) throw "Not a website";
-        if (!grabbed.includes(".")) throw "not a website    ";        
+        if (grabbed == "") {
+            alert("Please Drag or type a web address");
+            return true;
+
+        } else if (!grabbed.includes(".")) {
+            alert("That wasn't a website\r\nPlease check the spelling"); 
+            return true;
+
+        } else {
+            console.log("entry is valid!");
+            return false;          
+        }
+
     }
 
-    catch(err) {
-       alert("Input is " + err + "\r\nDid you forget to drag or type something in correctly?");
-       return;
-   }
+// Actual adding to the DOM and clearing input for next item entry.
 
-   // Do the actual adding and clearing input for next item entry.
+if (!errors) {
+     firstUl.appendChild(newItem);
+     newItem.appendChild(tNode);
+     inputHere.value = '';
+ }
 
-   firstUl.appendChild(newItem);
-   newItem.appendChild(tNode);
-   inputHere.value = '';
 
 }
