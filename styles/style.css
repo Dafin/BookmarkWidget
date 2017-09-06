@@ -68,6 +68,13 @@ p {
 
 }
 
+#addButton {
+        width: 71.8%;
+
+}
+
+
+
 /*breakpoints */
 @media only screen and (min-width: 30em) {
   .inputbox { width: 33.33%; }

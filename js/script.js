@@ -27,7 +27,8 @@
     function checkEntry(grabbed) {
 
         if (grabbed == "") {
-            alert("Please Drag or type a web address");
+            // alert("Please Drag or type a web address");
+            $( "#inputHere" ).effect( "shake", {times:3} );
             return true;
 
         } else if (!grabbed.includes(".")) {
@@ -48,6 +49,11 @@ if (!errors) {
      newItem.appendChild(tNode);
      inputHere.value = '';
  }
+
+// $( document ).click(function() {
+//   $( "#inputHere" ).effect( "shake", {times:3} );
+// });
+
 
 
 }
