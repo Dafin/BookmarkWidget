@@ -1,27 +1,42 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 /*! end of normalize.css v7 */
-
-h1, .info{
-    font-family: sans-serif, Arial, Verdana;
-    color: gray;
+body {
+  background: url(../images/topography.png) repeat;
 }
 
+h1, .info{
+  font-family: sans-serif, Arial, Verdana;
+  color: gray;
+}
+
+h1 {
+  text-shadow: -1px -1px white, 1px 1px #333
+}
 
 .listing {
-        border-right: 1px dotted #aaa;
-        color: silver;
+  color: silver;
 }
 
 ul li {
-    list-style: square ;
-        background: gray;
-        margin: 5px;
+  list-style: square ;
+  margin: 5px;
+  list-style-type: star;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  padding: 2px;
+  border-color: cyan;
+  border-width: 1px;
+  background-color: white;
+  cursor: hand;
+  cursor: pointer;
+  box-shadow: 2px 2px grey;
 }
 
+ul li:hover{
+background-color: #F3F3F3;
 
-.col      {
- padding: 0  1.5em;
 }
 
 .row .row { 
@@ -52,51 +67,92 @@ ul li {
   padding: 1em 0;
 }
 
-.info {
-      border-top: 1px dotted #aaa;
+  #inputHere {
+    width: 100%;
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 13px;
+    /*text-shadow: 1px 1px 3px #666666;*/
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    /*color: #ffffff;*/
+    padding: 10px 20px 10px 20px;
+    border: solid #fafafa 2px;
+    text-decoration: none;
+  }
 
-}
+  .info {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background: #F3F3F3;
+    -webkit-border-top-left-radius: 13;
+    -moz-border-top-left-radius: 13;
+    border-top-left-radius: 13px;
+    -webkit-border-bottom-left-radius: 13;
+    -moz-border-bottom-left-radius: 13;
+    border-bottom-left-radius: 13px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+   /*margin-right: 2px;*/
+    padding: 10px 20px 10px 20px;
+  }
 
-p {
-  font-style: italic;
-  color:  silver;
-}
+  p {
+    color: #348EC8;
+    text-shadow: none;
+  }
 
+  #addButton {
+    width: 100%;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 13px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border: solid #fafafa 2px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
 
-.listing {
-        border-bottom: 1px dotted #aaa;
+  #addButton:hover {
+    width: 100%;
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
+  }
 
-}
+  /*breakpoints */
+  @media only screen and (min-width: 30em) {
+    .inputbox { width: 33.33%; }
+    .listing { width: 33.33%; }
+    .info { width: 33.33%; }
+  }
 
-#addButton {
-        width: 71.8%;
+  /* Mozilla specific*/
+  /* Defining the counter style */
+  @counter-style star {
+    system: cyclic;
+    symbols: "\2605";
+    suffix: " ";
+  }   
 
-}
-
-
-
-/*breakpoints */
-@media only screen and (min-width: 30em) {
-  .inputbox { width: 33.33%; }
-  .listing { width: 33.33%; }
-  .info { width: 33.33%; }
-
-}
-
-
-
-/* Mozilla specific*/
-/* Defining the counter style */
-@counter-style star {
-  system: cyclic;
-  symbols: "\2605";
-  suffix: " ";
-}   
-
-ul li { 
-  list-style-type: star;
-}
-/* End moz specific */
-
-
-
+  /* End moz specific */
