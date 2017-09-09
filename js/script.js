@@ -1,3 +1,10 @@
+ 
+ //rotate backgrounds randomly
+ var images = ['topography.png','geometry.png','confectionary.png','symphony.png','roundabouts.png','misc.png'];
+
+ $('body').css({'background-image': 'url(./images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+
  function add() {
     // grab
     var ulArray = document.getElementsByClassName("TheList");
@@ -27,7 +34,6 @@
     function checkEntry(grabbed) {
 
         if (grabbed == "") {
-            // alert("Please Drag or type a web address");
             $( "#inputHere" ).effect( "shake", {times:3} );
             return true;
 
@@ -50,10 +56,7 @@ if (!errors) {
      inputHere.value = '';
  }
 
-// $( document ).click(function() {
-//   $( "#inputHere" ).effect( "shake", {times:3} );
-// });
-
-
 
 }
+
+
