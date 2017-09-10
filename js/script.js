@@ -53,9 +53,11 @@
 if (!errors) {
      firstUl.appendChild(newItem);
      newItem.appendChild(tNode);
+newItem.addEventListener('click', function() {
+  location.href=grabbed;
+});
      inputHere.value = '';
  }
-
 
 }
 
