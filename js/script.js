@@ -51,13 +51,13 @@
 // Actual adding to the DOM and clearing input for next item entry.
 
 if (!errors) {
-     firstUl.appendChild(newItem);
-     newItem.appendChild(tNode);
-newItem.addEventListener('click', function() {
-  location.href=grabbed;
-});
-     inputHere.value = '';
- }
+   firstUl.appendChild(newItem);
+   newItem.appendChild(tNode);
+   newItem.addEventListener('click', function() {
+    location.href=grabbed;
+  });
+   inputHere.value = '';
+}
 
 }
 
