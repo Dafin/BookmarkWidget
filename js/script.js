@@ -28,6 +28,10 @@
     console.log(lastUl)
 
     var errors = checkEntry(grabbed)
+
+    // var isUrl = addPrefix(grabbed)
+
+
     
     //basic error checking
 
@@ -38,7 +42,9 @@
             return true;
 
         } else if (!grabbed.includes(".")) {
-            alert("That wasn't a website\r\nPlease check the spelling"); 
+            $( "#inputHere" ).effect( "shake", {times:3} );
+            //Need to make the following less obtrusive to the user
+            alert("That wasn't a valid link\r\nPlease check the spelling!"); 
             return true;
 
         } else {
@@ -47,6 +53,7 @@
         }
 
     }
+
 
 // Actual adding to the DOM and clearing input for next item entry.
 
