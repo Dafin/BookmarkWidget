@@ -1,4 +1,15 @@
+//check for local storage support
  
+if (typeof(Storage) !== "undefined") {
+    console.log("Ready for local storage, yay!")
+} else {
+    console.log("No local storage, buuuu :( ")
+    // Sorry! No Web Storage support..
+}
+
+
+
+
  //rotate backgrounds randomly
  var images = ['topography.png','geometry.png','confectionary.png','symphony.png','roundabouts.png','misc.png'];
 
@@ -62,6 +73,9 @@ if (!errors) {
  inputHere.value = '';
 }
 }
+
+
+// Clicking the save button- if enabled
 
 function clickSave() {
     alert("clicked");
