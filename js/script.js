@@ -2,9 +2,9 @@
  
 if (typeof(Storage) !== "undefined") {
     console.log("Ready for local storage, yay!")
+    saveButton.disabled = false;
 } else {
     console.log("No local storage, buuuu :( ")
-    // Sorry! No Web Storage support..
 }
 
 
