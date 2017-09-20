@@ -5,7 +5,7 @@
  $('body').css({'background-image': 'url(./images/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 
- function add() {
+ function clickAdd() {
     // grab
     var ulArray = document.getElementsByClassName("TheList");
     console.log(ulArray);
@@ -30,8 +30,6 @@
     var errors = checkEntry(grabbed)
 
     // var isUrl = addPrefix(grabbed)
-
-
     
     //basic error checking
 
@@ -53,19 +51,28 @@
         }
 
     }
-
-
 // Actual adding to the DOM and clearing input for next item entry.
 
 if (!errors) {
-   firstUl.appendChild(newItem);
-   newItem.appendChild(tNode);
-   newItem.addEventListener('click', function() {
+ firstUl.appendChild(newItem);
+ newItem.appendChild(tNode);
+ newItem.addEventListener('click', function() {
     location.href=grabbed;
-  });
-   inputHere.value = '';
+});
+ inputHere.value = '';
+}
 }
 
+function clickSave() {
+    alert("clicked");
+    document.getElementById("saveButton").disabled = true; 
 }
+
+
+
+
+
+
+
 
 

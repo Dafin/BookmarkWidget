@@ -145,6 +145,22 @@ background-color: #F3F3F3;
     cursor: hand;
   }
 
+
+#saveButton {
+    width: 100%;
+    background: gray;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
+    margin-top: 40px;
+  }
+
+
   /*breakpoints */
   @media only screen and (min-width: 30em) {
     .inputbox { width: 33.33%; }
