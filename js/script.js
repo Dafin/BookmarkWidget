@@ -65,7 +65,7 @@ if (!errors) {
 
 function clickSave() {
     alert("clicked");
-    document.getElementById("saveButton").disabled = true; 
+    saveButton.disabled = true; 
 }
 
 
